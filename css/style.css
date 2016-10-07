@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat');
+body {
+  background-color: #230F2B;
+  color: #BCE3C5;
+}
+
+h1 {
+  margin-top: 20vh;
+  font-family: Lora, serif;
+}
+
+#input-group {
+  display: block;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+#homebtn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  height: 2.5em;
+  margin-right: 5px;
+  padding: 0;
+  font-size: 2em;
+  &:hover {
+    color: #F21D41;
+  }
+}
+
+#searchbox {
+  display: inline-block;
+  border-radius: 20px 5px 5px 20px;
+  border-width: 3px;
+  border-color: #F21D41;
+  height: 2.5em;
+  width: 50%;
+}
+
+#gobtn {
+  display: inline-block;
+  height: 2.5em;
+  padding: 7px 14px 7px 10px;
+  background-color: #F21D41;
+  border-radius: 5px;
+  color: white;
+  &:hover {
+    color: #230F2B;
+  }
+}
+
+#randombtn {
+  display: inline-block;
+  height: 2.5em;
+  padding: 7px 14px 7px 10px;
+  background-color: #F21D41;
+  border-radius: 5px 20px 20px 5px;
+  color: white;
+  &:hover {
+    color: #230F2B;
+  }
+}
+
+#result {
+  margin-top: 7vh;
+}
+
+.list {
+  position: relative;
+  background-color: #BCE3C5;
+  color: #230F2B;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: all .15s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: #F21D41;
+  }
+}
+
+.list > h2 {
+  font-family: Lora, serif;
+  font-size: 2em;
+  color: #F21D41;
+}
+
+.list > p {
+  font-family: Montserrat, sans-serif;
+}
+
+#link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#morebtn {
+  width: 100%;
+  margin-bottom: 10vh;
+  border-radius: 0;
+  border: none;
+  background-color: #F21D41;
+  color: #BCE3C5;
+  height: 2em;
+  font-size: 1.2em;
+  text-align: center;
+  &:hover {
+    color: #230F2B;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
