@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Viewer</title>    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">    
+  </head>
+
+  <body>
+    <div class='container'>
+        <div class='row'>
+          <div class='col-md-10 col-md-offset-1 col-s-10 col-s-offset-1 col-xs-10 col-xs-offset-1'>
+            <h1 class='text-center' id='header'>Wikipedia Viewer</h1>
+            <div id='input-group'>
+              <button class='btn btn-primary hidden' id='homebtn'><span class='fa fa-wikipedia-w'></span></button>
+              <input class='form-control' type='text' placeholder='search for...' id='searchbox'></input>
+              <a class='button text-center' id='gobtn' data-toggle='tooltip' data-placement='top' title='Go!'><i class='glyphicon glyphicon-search'></i></a>
+              <a class='button text-center' id='randombtn' href='https://en.wikipedia.org/wiki/Special:Random' target='_blank' data-toggle='tooltip' data-placement='top' title='Random article'><i class='glyphicon glyphicon-random'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1'>
+            <div id='result'></div>
+            <button class="btn btn-default hidden" id="morebtn">more results</button>
+          </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>    
+  </body>
+</html>
